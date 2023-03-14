@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter a string: ");
+    String str = sc.nextLine();
+
+    int length = str.length();
+    System.out.println("Length of the string: " + length);
+
+    int half = length / 2;
+    System.out.println("Second half of the string: " + str.substring(half));
+  }
+}

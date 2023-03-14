@@ -1,0 +1,28 @@
+// Define an interface
+interface Shape {
+    double getArea();
+}
+
+// Define a class that implements the Shape interface
+class Rectangle implements Shape {
+    private double width;
+    private double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    public double getArea() {
+        return width * height;
+    }
+}
+
+// Define a class that uses the Shape interface
+class Main {
+    public static void main(String[] args) {
+        // Create an instance of Rectangle and call getArea()
+        Rectangle rectangle = new Rectangle(5, 10);
+        System.out.println("Rectangle area: " + rectangle.getArea());
+    }
+}

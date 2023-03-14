@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class PercentageCalculator {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    int totalMarks = 0;
+
+    System.out.println("Enter marks for 6 subjects:");
+    for (int i = 1; i <= 6; i++) {
+      System.out.print("Subject " + i + ": ");
+      int marks = scanner.nextInt();
+      totalMarks += marks;
+    }
+
+     System.out.println("Total Marks: "+totalMarks);
+    double percentage = (double) totalMarks / 6;
+    System.out.println("Percentage: " + percentage + "%");
+  }
+}

@@ -1,0 +1,15 @@
+class Main {
+
+  public static void main(String[] args) {
+    System.out.println("Area of Circle: " + area(5)+"\n");
+    System.out.println("Area of Rectangle: " + area(5, 10));
+  }
+
+  public static double area(double radius) {
+    return Math.PI * radius * radius;
+  }
+
+  public static int area(int length, int width) {
+    return length * width;
+  }
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class PalindromeChecker {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a string or number: ");
+        String input = sc.nextLine();
+        
+        if (input.equals(new StringBuilder(input).reverse().toString())) {
+            System.out.println("The input is a palindrome");
+        } else {
+            System.out.println("The input is not a palindrome");
+        }
+    }
+}
